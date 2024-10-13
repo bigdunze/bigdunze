@@ -1,26 +1,24 @@
 *{
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-style: normal;
 }
 body{
-    background-image: url('bg2\ \(1\).jpg');
+    background-color: black;
     background-position: center;
     background-size: cover;
-
-    
 }
 header{
     display: flex;
-    position: fixed;
+    position: relative;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     height: 60px;
     opacity: 0.75;
-    background-color: rgb(27, 27, 27,0.7);
+    background-color: rgba(135, 128, 128, 0.7);
+    margin-bottom: 20px;
 }
 .logo a{
     font-weight: bold;
@@ -32,7 +30,6 @@ header{
 .logo a:hover{
     color: orange;
 }
-
 .nav{
     position: absolute;
     padding: 0 20px;
@@ -41,11 +38,10 @@ header{
 .nav ul{
     list-style: none;
 }
-.nav ul li {
-   display: inline-block;
-   vertical-align: middle;
+.nav ul li{
+    display: inline-block;
 }
-.nav ul li  a {
+.nav ul li a{
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -54,28 +50,80 @@ header{
     margin: 0 14px;
     transition: 0.9s;
 }
-.nav ul li > a:hover {
-  color: orange
-    
-;
+.nav ul li a:hover{
+    color: orange;
 }
-.produit-card{
-    position: relative;
-    width: 420px;
-    height: 420px;
-    background-color:rgb(27, 27, 27,0.5) ;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
+
+.articles{
+    
+    width: 100%;
+    padding: 20px;
    
     
 }
-.img-box{
-    width: 310px;
-    height: 310px;
-    text-align: center;
-    background-color: rgb(245, 245, 245,0.5);
+
+.produit-card{
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px whitesmoke;
+    width: 300px;
+    height: 380px;
+    transition: 0.8s;
 }
+.produit-card:hover{
+    transform: scale(1.01);
+}
+
 .img{
+    width: 100%;
+    height: 200px;
+    border-bottom: solid 2px whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.p-titele{
+    padding: 15px;
     text-align: center;
+}
+
+.p-titele h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.p-titele p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.p-titele a{
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.p-titele a:hover{
+    background-color: orange;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
 }
