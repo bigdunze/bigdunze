@@ -20,7 +20,7 @@ body {
 
 
 .container h1 {
-    color: #ffffff;
+    color: orange;
     text-align: center;
     font-size: 50px;
     font-weight: 800;
@@ -46,30 +46,38 @@ body {
 .container-left {
     flex-basis: 60%;
     padding: 40px 60px;
+    background-image: url(BG\ \(1\).jpg);
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
 }
 
 
 .container-right {
     flex-basis: 40%;
     padding: 40px 60px;
-    background: hsl(207, 95%, 55%);
-    color: #ffffff;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 
 .container-left h3 {
     font-size: 25px;
-    color: #353535;
+    color: black;
     margin-bottom: 20px;
+  
 }
 
 
 .container-right h3 {
     font-size: 25px;
-    color: #ffffff;
+    color: black;
     margin-bottom: 20px;
+    
+    
 }
+.container-right{
+    background-image: url('preview\ \(2\)ll.jpg');
+}
+
 
 
 .input-row {
@@ -158,4 +166,44 @@ iframe {
     outline: none;
     margin-top: 30px;
 }
-
+.L{
+    color:  black;
+}
+.in{
+    border: none;
+    border-bottom: solid 2px orange;
+    background-color: rgb(116, 119, 121,0.3);
+}
+::placeholder{
+    color: whitesmoke;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.B{
+    padding: 13px;
+    width: 120px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    transition: 0.9s;
+}
+.B:hover{
+    background-color: orange;
+    color: black;
+}
+.l1{
+    background-color: rgb(116, 119, 121,0.3);
+    padding: 12px;
+    box-shadow: 2px 2px 2px 2px orange;
+    height: 55px;
+}
+.l{
+    color: black;
+}
+.p{
+    color: black;
+}
+.l1 p{
+    color: whitesmoke;
+    font-size: 15px;
+}
