@@ -1,0 +1,160 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    background-image: url('bg7\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+
+    
+}
+header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    opacity: 0.75;
+    background-color: rgb(27, 27, 27,0.7);
+}
+.logo a{
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.9s;
+}
+.logo a:hover{
+    color: orange;
+}
+
+.nav{
+    padding: 0 20px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li {
+   display: inline-block;
+   vertical-align: middle;
+}
+.nav ul li  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 14px;
+    transition: 0.9s;
+}
+.nav ul li > a:hover {
+  color: orange
+    
+;
+}
+.slider{
+    width: 400px;
+    height:  400px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 15px;
+    position: relative;
+    left: 60%;
+    top: 20%;
+  
+    
+}
+.slider ul {
+    width: 1200px;
+    list-style: none;
+    position: relative;
+    animation: sliding 15s ease infinite;
+    
+}
+.slider ul:hover {
+    animation-play-state:paused ;
+}
+.slider ul li{
+    float: left;
+    position: relative;
+}
+@keyframes sliding{
+    0% , 16.6%{left: 0;}
+    33.2% , 49.8%{left: -400px;}
+    66.4% , 100%{left: -800px;}
+}
+.logo-p{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+}
+.logo-p h2{
+    color: orange;
+    font-weight: bold;
+    font-size: 35px;
+}
+.logo-p i {
+    font-weight: bold;
+    font-size: 35px;
+    color: orange;
+}
+.p{
+   
+ 
+    padding: 18px;
+    color: white;
+    
+}
+.desc{
+    background-color: rgb(27, 27, 27,0.7);
+    width: 600px;
+    position: absolute;
+    left: 6%;
+    top:40%;
+    box-shadow: 2px 2px 6px black;
+    border-radius: 10px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 6%;
+    top:80%;
+}
+#b1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:orange;
+    padding: 6px;
+    border-radius: 9px;
+    color: white;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+#b1 >i{
+    font-size: 20px;
+}
+#b2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:whitesmoke;
+    padding: 6px;
+    border-radius: 9px;
+    color: black;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+#b1 >i{
+    font-size: 20px;
+}

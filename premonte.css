@@ -1,0 +1,81 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    background-image: url('bg2\ \(1\).jpg');
+    background-position: center;
+    background-size: cover;
+
+    
+}
+header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    opacity: 0.75;
+    background-color: rgb(27, 27, 27,0.7);
+}
+.logo a{
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.9s;
+}
+.logo a:hover{
+    color: orange;
+}
+
+.nav{
+    position: absolute;
+    padding: 0 20px;
+    left: 60%;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li {
+   display: inline-block;
+   vertical-align: middle;
+}
+.nav ul li  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0 14px;
+    transition: 0.9s;
+}
+.nav ul li > a:hover {
+  color: orange
+    
+;
+}
+.produit-card{
+    position: relative;
+    width: 420px;
+    height: 420px;
+    background-color:rgb(27, 27, 27,0.5) ;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+   
+    
+}
+.img-box{
+    width: 310px;
+    height: 310px;
+    text-align: center;
+    background-color: rgb(245, 245, 245,0.5);
+}
+.img{
+    text-align: center;
+}
