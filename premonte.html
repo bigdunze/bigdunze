@@ -1,59 +1,106 @@
 <html>
-    <head>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="premonte.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <title>Prémonté</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-               <a href="acceuille.html"><i class='bx bx-ghost'></i>  </a>       
-           </div>
-            <div class="nav">
-               <ul>
-                   <li> <a href="acceuille.html">Accueil      </a>    </li>
-                   <li> <a href="premonte.html">Prémonté      </a>    </li>
-                   <li> <a href="composants.html">Composants  </a>    </li>
-                   <li> <a href="about_us.html">À propos      </a>    </li>
-                   <li> <a href=""><i class='bx bxs-cart' >   </i></a></li> 
-               </ul>
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="premonte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="cartt.js" defer></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Prémonté</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="acceuille.html"><i class='bx bx-ghost'></i></a>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="acceuille.html">Accueil</a></li>
+                <li><a href="premonte.html">Prémonté</a></li>
+                <li><a href="composants.html">Composants</a></li>
+                <li><a href="about_us.html">À propos</a></li>
+                <li><div class="cart-icon-container">
+                    <img class="cart-icon" src="icon-cart.svg" alt="cart icon">
+                    <div class="cart-count">
+                        <span class="qty">0</span>
+                    </div>
+                </div>
+            </li>
+            </ul>
+            <div class="cart-container">
+                <div class="cart-title">Cart</div>
+                <div class="cart-items empty">
+                    <p class="cart-empty"></p>
+                </div>
+                <button class="checkout">Checkout</button>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <div class="articles">
-            <div class="all">
-           
+    <div class="articles">
+        <div class="all">
             <div class="produit-card">
                 <div class="img">
-                   <img src="pc1-removebg-preview.png" alt="error">
+                    <img src="pc1-removebg-preview.png" alt="error">
                 </div>
                 <div class="p-titele">
                     <h5>AMD RAYZEN 5 5600 AND RX 580</h5>
                     <p>550$</p>
-                    <a href="#">ajouter au panier</a>        
+                    <button class="add-to-cart">
+                        <span><i class="bx bxs-cart-add"></i></span>
+                        <span>Ajouter Au Panier</span>
+                    </button>
+                    <br>
+                    <div class="add-to-cart-container">
+                        <div class="counter">
+                            <button class="minus"><i class="bx bxs-minus-circle"></i></button>
+                            <span class="count">0</span>
+                            <button class="plus"><i class='bx bxs-plus-circle'></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="produit-card">
                 <div class="img">
-                   <img src="pc1-removebg-preview.png" alt="error">
+                    <img src="pc1-removebg-preview.png" alt="error">
                 </div>
                 <div class="p-titele">
-                    <h5>INTEL CORE I9 13900k AND RTX 3070 </h5>
+                    <h5>INTEL CORE I9 13900k AND RTX 3070</h5>
                     <p>900$</p>
-                    <a href="#">ajouter au panier</a>        
+                    <button class="add-to-cart">
+                        <span><i class="bx bxs-cart-add"></i></span>
+                        <span>Ajouter Au Panier</span>
+                    </button>
+                    <br>
+                    <div class="add-to-cart-container">
+                        <div class="counter">
+                            <button class="minus"><i class="bx bxs-minus-circle"></i></button>
+                            <span class="count">0</span>
+                            <button class="plus"><i class='bx bxs-plus-circle'></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="produit-card">
                 <div class="img">
-                   <img src="pc1-removebg-preview.png" alt="error">
+                    <img src="pc1-removebg-preview.png" alt="error">
                 </div>
                 <div class="p-titele">
                     <h5>AMD RAYZEN 5 5600 AND RX 6600</h5>
                     <p>650$</p>
-                    <a href="#">ajouter au panier</a>        
+                    <button class="add-to-cart">
+                        <span><i class="bx bxs-cart-add"></i></span>
+                        <span>Ajouter Au Panier</span>
+                    </button>
+                    <br>
+                    <div class="add-to-cart-container">
+                        <div class="counter">
+                            <button class="minus"><i class="bx bxs-minus-circle"></i></button>
+                            <span class="count">0</span>
+                            <button class="plus"><i class='bx bxs-plus-circle'></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,36 +109,68 @@
         <div class="all">
             <div class="produit-card">
                 <div class="img">
-                   <img src="pc6-removebg-preview.png" alt="error">
+                    <img src="pc6-removebg-preview.png" alt="error">
                 </div>
                 <div class="p-titele">
                     <h5>INTEL CORE I9 14900k AND RTX 3070</h5>
                     <p>1000$</p>
-                    <a href="#">ajouter au panier</a>        
+                    <button class="add-to-cart">
+                        <span><i class="bx bxs-cart-add"></i></span>
+                        <span>Ajouter Au Panier</span>
+                    </button>
+                    <br>
+                    <div class="add-to-cart-container">
+                        <div class="counter">
+                            <button class="minus"><i class="bx bxs-minus-circle"></i></button>
+                            <span class="count">0</span>
+                            <button class="plus"><i class='bx bxs-plus-circle'></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="produit-card">
                 <div class="img">
-                   <img src="pc6-removebg-preview.png" alt="error">
+                    <img src="pc6-removebg-preview.png" alt="error">
                 </div>
                 <div class="p-titele">
                     <h5>INTEL CORE I9 14900k AND RTX 3070 TI</h5>
                     <p>1200$</p>
-                    <a href="#">ajouter au panier</a>        
+                    <button class="add-to-cart">
+                        <span><i class="bx bxs-cart-add"></i></span>
+                        <span>Ajouter Au Panier</span>
+                    </button>
+                    <br>
+                    <div class="add-to-cart-container">
+                        <div class="counter">
+                            <button class="minus"><i class="bx bxs-minus-circle"></i></button>
+                            <span class="count">0</span>
+                            <button class="plus"><i class='bx bxs-plus-circle'></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="produit-card">
                 <div class="img">
-                   <img src="pc6-removebg-preview.png" alt="error">
+                    <img src="pc6-removebg-preview.png" alt="error">
                 </div>
                 <div class="p-titele">
                     <h5>AMD RAYZEN 5 7500XT AND RX 7700 XT</h5>
                     <p>1100$</p>
-                    <a href="#">ajouter au panier</a>        
+                    <button class="add-to-cart">
+                        <span><i class="bx bxs-cart-add"></i></span>
+                        <span>Ajouter Au Panier</span>
+                    </button>
+                    <br>
+                    <div class="add-to-cart-container">
+                        <div class="counter">
+                            <button class="minus"><i class="bx bxs-minus-circle"></i></button>
+                            <span class="count">0</span>
+                            <button class="plus"><i class='bx bxs-plus-circle'></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
