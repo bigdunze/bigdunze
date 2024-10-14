@@ -19,7 +19,6 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    opacity: 0.75;
     background-color: rgb(27, 27, 27,0.7);
 }
 .logo a{
